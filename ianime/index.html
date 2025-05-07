@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ianime | Univers Animes et Manga en Streaming VOSTFR et VF)</title>
+    <meta name="robots" content="nofollow, noindex, max-snippet:-1, max-video-preview:-1, max-image-preview:large"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="https://mavanime.stream/images/icon.png" type="image/x-icon">
+    <style>
+    body {
+        margin: 0;
+        background: #17191f;
+    }
+
+    iframe#main-iframe {
+        width: calc(100vw - 320px);
+        height: 100vh;
+        display:block;
+        margin: auto;
+        position: fixed;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .banner-ngang {
+        position: fixed;
+        left: 50%;  
+        transform:translateX(-50%); 
+        bottom: 0;
+        display: flex;
+    }
+    .ngang-mobi{
+        display: none;
+    }
+    .banner-sidebar {
+        position: fixed;
+        left: 0;
+        top: 50%;
+        transform:translateY(-50%);
+        display: flex;
+        flex-direction: column;
+    }
+    .banner-sidebar.banner-right {
+        right: 0;
+        left: auto;
+        padding-left: 17px;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        width: 184px;
+        z-index: 1;
+        top: 0;
+        transform: inherit;
+    }
+
+    
+    @media only screen and (max-width: 1000px) {
+        iframe#main-iframe {
+            width: 100vw;
+        }
+        .banner-sidebar {
+            display: none!important;
+        }
+    }
+    @media only screen and (max-width: 728px) {
+
+        .banner-ngang {
+            display: none;
+        }
+        .ngang-mobi{
+            display: block;
+        }
+    }
+
+    .banner-sidebar.banner-right{
+        background: #17191f;
+    }
+    .banner-sidebar.banner-right iframe {
+        z-index: 2;
+    }
+
+    .banner-sidebar button {
+        z-index: 2;
+    }
+
+    </style>
+</head>
+<body>
+
+    <div class="banner-sidebar banner_wrapper banner-right"> <!-- banner dọc phải -->
+
+        <script type="text/javascript">
+        atOptions = {
+            'key' : '170dd77082b5b5e800f811d971cba7f8',
+            'format' : 'iframe',
+            'height' : 300,
+            'width' : 160,
+            'params' : {}
+        };
+        </script>
+        <script type="text/javascript" src="//direeyesightstray.com/170dd77082b5b5e800f811d971cba7f8/invoke.js"></script>
+
+    </div> 
+
+    <iframe id="main-iframe" src="https://voiranimefr.com/" frameborder="0" allowfullscreen></iframe>
+
+    <script type='text/javascript' src='//storystaffrings.com/d6/5b/f4/d65bf4229f2d27696ef6c5eae209107e.js'></script><!--pop-up-->
+
+    <div class="banner-ngang banner_wrapper ngang-pc"> <!-- banner ngang cho PC -->
+
+      <script type="text/javascript">
+          atOptions = {
+            'key' : '4a67bc5bf3c2c01c14afea57c42419b3',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+        </script>
+        <script type="text/javascript" src="//direeyesightstray.com/4a67bc5bf3c2c01c14afea57c42419b3/invoke.js"></script>
+        
+    </div>
+
+<div class="banner-ngang banner_wrapper ngang-mobi"> <!-- banner ngang cho mobi -->
+
+  <script type="text/javascript">
+    atOptions = {
+        'key' : '83d41553405d4bb585bfb9a78b0c3a67',
+        'format' : 'iframe',
+        'height' : 50,
+        'width' : 320,
+        'params' : {}
+    };
+</script>
+<script type="text/javascript" src="//direeyesightstray.com/83d41553405d4bb585bfb9a78b0c3a67/invoke.js"></script>
+
+</div>
+
+
+<div class="banner-sidebar banner_wrapper banner-left"> <!-- banner dọc trái -->
+<script type="text/javascript">
+    atOptions = {
+        'key' : 'a1331ea91d2468a29efa7148e175d483',
+        'format' : 'iframe',
+        'height' : 600,
+        'width' : 160,
+        'params' : {}
+    };
+</script>
+<script type="text/javascript" src="//direeyesightstray.com/a1331ea91d2468a29efa7148e175d483/invoke.js"></script>
+</div>
+
+
+
+
+
+
+
+<script>
+        // Lấy tất cả các phần tử có class là "banner_wrapper"
+        var bannerWrappers = document.querySelectorAll('.banner_wrapper');
+
+        // Duyệt qua từng phần tử và chèn nút X vào mỗi phần tử
+        bannerWrappers.forEach(function(bannerWrapper) {
+        // Tạo một phần tử button
+        var xButton = document.createElement('button');
+
+        // Thêm nội dung cho nút X (có thể thay đổi nếu bạn muốn)
+        xButton.innerHTML = '&times;';
+
+        // Tạo kiểu cho nút X để làm đẹp
+        xButton.style.position = 'absolute';
+        xButton.style.top = '-5px'; // Có thể điều chỉnh khoảng cách từ trên xuống
+        xButton.style.right = '-5px'; // Có thể điều chỉnh khoảng cách từ phải sang trái
+        xButton.style.padding = '0 5px'; // Có thể điều chỉnh kích thước nút
+        xButton.style.border = 'none';
+        xButton.style.backgroundColor = '#ffffff'; // Màu nền trắng
+        xButton.style.color = '#000'; // Màu chữ xanh đậm
+        xButton.style.fontWeight = 'bold';
+        xButton.style.fontSize = '25px'; // Cỡ chữ
+        xButton.style.lineHeight = '24px'; // line-height
+        xButton.style.cursor = 'pointer';
+        xButton.style.boxShadow = 'rgb(0, 0, 0) 0px 2px 4px';
+        xButton.style.borderRadius = '2px';
+        xButton.style.transition = 'background-color 0.3s'; // Hiệu ứng hoạt hình
+
+        // Tạm ẩn nút X và xuất hiện sau 3s
+        xButton.style.display = 'none';
+        setTimeout(function() {
+            xButton.style.display = 'block';
+        }, 3000);
+
+        // Hiệu ứng hoạt hình khi hover
+        xButton.addEventListener('mouseover', function() {
+        xButton.style.backgroundColor = '#e0e0e0'; // Màu nền xám nhạt
+    });
+
+        xButton.addEventListener('mouseout', function() {
+        xButton.style.backgroundColor = '#ffffff'; // Màu nền trắng
+    });
+
+        // Gán sự kiện click cho nút X để ẩn phần tử khi được nhấp
+        xButton.addEventListener('click', function() {
+        // Duyệt qua tất cả các phần tử có class "banner_wrapper" và ẩn chúng
+        bannerWrappers.forEach(function(banner) {
+            banner.style.display = 'none';
+        });
+    });
+
+        // Chèn nút X vào phần tử "banner_wrapper"
+        bannerWrapper.appendChild(xButton);
+    });
+</script>
+</body>
+</html>
+
+
