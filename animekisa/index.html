@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animekisa – Watch Anime Online, Free Anime Streaming</title>
+    <link rel="shortcut icon" href="https://animekisa.com.im/images/th.png" type="image/x-icon">
+    <style>
+    body > iframe {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+}
+
+body {
+    overflow: hidden;
+    margin: 0;
+}
+
+.ads {
+    position: fixed;
+    z-index: 5;
+}
+
+.left-ads {
+    bottom: 0;
+}
+
+.right-ads {
+    right: 20px;
+    width: 160px;
+    bottom: 0;
+}
+
+.bottom-ads {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+ @media only screen and (max-width: 1500px) {
+    .right-ads,.left-ads {
+        display: none;
+    }
+ }
+    </style>
+
+
+</head>
+<body>
+
+    <div class="left-ads ads">
+        <script type="text/javascript"> atOptions = { 'key' : '231ef78e8e029f7a021d371b50b1d76b', 'format' : 'iframe', 'height' : 300, 'width' : 160, 'params' : {} }; </script> 
+        <script type="text/javascript" src="//direeyesightstray.com/231ef78e8e029f7a021d371b50b1d76b/invoke.js"></script>
+    </div>
+
+    <iframe src="https://9anime.com.ro/" allowfullscreen frameborder="0"></iframe>
+    
+    <div class="right-ads ads">
+        <script type="text/javascript"> atOptions = { 'key' : '40a042dc2a488e7371ba3a5047d6e0e1', 'format' : 'iframe', 'height' : 600, 'width' : 160, 'params' : {} }; </script> 
+        <script type="text/javascript" src="//direeyesightstray.com/40a042dc2a488e7371ba3a5047d6e0e1/invoke.js"></script>
+    </div>
+
+    <div class="bottom-ads ads">
+      <script type="text/javascript"> atOptions = { 'key' : 'be05a100184b475c43e579102007dc80', 'format' : 'iframe', 'height' : 60, 'width' : 468, 'params' : {} }; </script>
+      <script type="text/javascript" src="//direeyesightstray.com/be05a100184b475c43e579102007dc80/invoke.js"></script>   
+  </div>
+
+  <script>
+        
+        var bannerWrappers = document.querySelectorAll('.ads');
+
+        
+        bannerWrappers.forEach(function(bannerWrapper) {
+        
+        var xButton = document.createElement('button');
+
+        
+        xButton.innerHTML = '&times;';
+
+        
+        xButton.style.position = 'absolute';
+        xButton.style.top = '-5px'; 
+        xButton.style.right = '-5px'; 
+        xButton.style.padding = '0 5px'; 
+        xButton.style.border = 'none';
+        xButton.style.backgroundColor = '#ffffff'; 
+        xButton.style.color = '#000'; 
+        xButton.style.fontWeight = 'bold';
+        xButton.style.fontSize = '25px'; 
+        xButton.style.lineHeight = '24px'; 
+        xButton.style.cursor = 'pointer';
+        xButton.style.boxShadow = 'rgb(0, 0, 0) 0px 2px 4px';
+        xButton.style.borderRadius = '2px';
+        xButton.style.transition = 'background-color 0.3s'; 
+
+        
+        xButton.style.display = 'none';
+        setTimeout(function() {
+            xButton.style.display = 'block';
+        }, 3000);
+
+        
+        xButton.addEventListener('mouseover', function() {
+        xButton.style.backgroundColor = '#e0e0e0'; 
+    });
+
+        xButton.addEventListener('mouseout', function() {
+        xButton.style.backgroundColor = '#ffffff'; 
+    });
+
+    
+    xButton.addEventListener('click', function() {
+    
+    var iframes = bannerWrapper.querySelectorAll('iframe');
+    iframes.forEach(function(iframe) {
+        iframe.style.display = 'none';
+    });
+
+    
+    xButton.style.display = 'none';
+    });
+
+
+        
+        bannerWrapper.appendChild(xButton);
+    });
+</script>
+</body>
+</html>
